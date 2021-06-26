@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+#title{
+        font-size: 6rem;
+        margin: 2rem;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: #fff;
+    transition:  width 3s;
+    transition:  width 2s, height 5s;
+}
+
+div:hover{
+    width: 400px;
+    height: 300px;
+}
+
+
+/*LINEAR*/
+
+#div1{
+    background-color: blue;
+    transition-timing-function: linear;
+}
+
+#div2{
+    background-color: green;
+    transition-timing-function: ease;
+}
+
+#div3{
+    background-color: yellow;
+    color: #333;
+    transition-timing-function: ease-in;
+}
+
+#div4{
+    background-color: purple;
+    transition-timing-function: ease-out;
+}
+
+#div5{
+    background-color: orange;
+    transition-timing-function: ease-in-out;
+}
+
+div.delay{
+    width: 100px;
+    height: 100px;
+    transition:  width 3s;
+    transition-delay: 0.5s;
+}
+
+div.delay:hover{
+    width: 500px
+}
+div.transformation{
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    transition: width 2s, height 2s, transform 2s;
+}
+div.transformation:hover{
+    width: 300px;
+    height: 300px;
+ 
+    /*transform: rotate(180deg);*/
+    transform: rotate(5turn);
+
+    transform: scale(0.1);
+    transform: scale(1.2);
+
+    transform: translateX(120px);
+
+    transform: translate(120px,120px); /*two axis*/
+    transform: translate(120px,50%); 
+}
+
+div.shorthand{
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    
+    /*transition: pro dur,timing-func,delay;*/
+
+    transition: width 4s, height 2s, background-color 2s, transform 2s, ease-in-out 2s;
+}
+
+div.shorthand:hover{
+    width: 300px;
+    height: 400px;
+    background-color: red;
+
+    transform: rotate(180deg);
+
+}
